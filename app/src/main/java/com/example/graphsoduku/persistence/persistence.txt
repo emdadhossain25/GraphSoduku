@@ -1,0 +1,7 @@
+the persistence package
+definition: package has a role of persisting or storing data beyond the lifecycle
+of an android process/program running on a device
+
+for this example: we are going to store users sudoku game state and personal
+records/statistics in the persistence package
+

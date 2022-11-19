@@ -2,6 +2,8 @@ package com.example.graphsoduku.common
 
 import android.app.Activity
 import android.widget.Toast
+import com.example.graphsoduku.R
+import com.example.graphsoduku.domain.Difficulty
 
 // Extensions follow OCP
 // software entities should be open for extensions but closed for modification
@@ -29,3 +31,12 @@ internal fun Long.toTime(): String {
     if (seconds.length == 1) seconds = "0$seconds"
     return String.format("$minutes:$seconds")
 }
+
+internal val Difficulty.toLocalizeResource: Int
+    get() {
+        return when (this) {
+            Difficulty.EASY -> R.string.easy
+            Difficulty.MEDIUM -> R.string.medium
+            Difficulty.HARD -> R.string.hard
+        }
+    }
