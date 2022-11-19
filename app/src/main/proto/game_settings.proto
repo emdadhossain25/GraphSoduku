@@ -1,0 +1,21 @@
+// protocol buffers is kind of a language like json
+
+// below lines will be consumed by protocol buffer for code compiler
+// protoBuffer generator
+syntax = "proto3";
+option java_package = "com.example.graphsoduku";
+option java_multiple_files = true; // generated java files separate files
+
+
+message GameSettings{
+  int32 boundary =9;
+  ProtoDifficulty difficulty = 2;
+
+
+  enum ProtoDifficulty{
+    UNKNOWN=0;
+    EASY=1;
+    MEDIUM=2;
+    HARD=3;
+  }
+}

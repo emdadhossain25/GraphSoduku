@@ -22,6 +22,14 @@ interface IGameRespository {
         onError: (Exception) -> Unit
     )
 
+
+    //create new game
+    suspend fun createNewGame(
+        settings: Settings,
+        onSuccess: (Unit) -> Unit,
+        onError: (Exception) -> Unit
+    )
+
     suspend fun updateNode(
         x: Int,
         y: Int,
@@ -47,7 +55,7 @@ interface IGameRespository {
 
     suspend fun updateSettings(
         settings: Settings,
-        onSuccess: (Settings) -> Unit,
+        onSuccess: (Unit) -> Unit,
         onError: (Exception) -> Unit
     )
 }

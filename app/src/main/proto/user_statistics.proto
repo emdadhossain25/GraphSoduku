@@ -1,0 +1,18 @@
+// protocol buffers is kind of a language like json
+
+// below lines will be consumed by protocol buffer for code compiler
+// protoBuffer generator
+syntax = "proto3";
+option java_package = "com.example.graphsoduku";
+option java_multiple_files = true; // generated java files separate files
+
+message Statistics{
+  //using this 64 bit cause its gonna be in milliseconds
+  int64 fourEasy = 1;
+  int64 fourMedium = 2;
+  int64 fourHard = 3;
+  int64 nineEasy = 4;
+  int64 nineMedium = 5;
+  int64 nineHard = 6;
+
+}

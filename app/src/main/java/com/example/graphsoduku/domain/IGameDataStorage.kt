@@ -5,9 +5,9 @@ import java.lang.Exception
 interface IGameDataStorage {
 
     suspend fun udpateGame(game: SudokuPuzzle): GameStorageResult
-    suspend fun udpateNode(x: Int, y: Int, elapsedTime: Long): GameStorageResult
-    suspend fun getCurrentGame(): GameStorageResult
+    suspend fun udpateNode(x: Int, y: Int, color: Int, elapsedTime: Long): GameStorageResult
 
+    suspend fun getCurrentGame(): GameStorageResult
 }
 
 
