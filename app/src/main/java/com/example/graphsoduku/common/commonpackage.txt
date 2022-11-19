@@ -1,0 +1,23 @@
+## Common Package
+- Extension Function and Properties
+- Abstract Classes
+- The open-closed principle(from SOLID)
+- object SingleTons
+- coroutine dispatchers
+
+
+Open Closed Principle
+        Any commonly reused software entity, which is expected to change,
+        should have a fixed public interface, and a way to change its
+        implementation.
+
+        software entity: Class, Function etc
+
+        Fixed (closed) Public Interface:
+        for example onCreate(),onStart() etc (will have to update without changing)
+
+            how can we provide new mechanism:
+            - inheritence
+            - interface
+            - extension functions
+            - design pattern!
